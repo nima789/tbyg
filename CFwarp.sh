@@ -56,7 +56,7 @@ bbr="暂不支持显示"
 fi
 if [[ $vi = openvz ]]; then
 TUN=$(cat /dev/net/tun 2>&1)
-if [[ ${TUN} != "cat: /dev/net/tun: File descriptor in bad state" ]]; then 
+if [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ '处于错误状态' ]] && [[ ! $TUN =~ 'Die Dateizugriffsnummer ist in schlechter Verfassung' ]]; then
 red "检测到未开启TUN，现尝试添加TUN支持" && sleep 4
 cd /dev
 mkdir net
@@ -66,7 +66,7 @@ TUN=$(cat /dev/net/tun 2>&1)
 if [[ ${TUN} != "cat: /dev/net/tun: File descriptor in bad state" ]]; then 
 green "添加TUN支持失败，建议与VPS厂商沟通或后台设置开启" && exit 0
 else
-green "恭喜，添加TUN支持成功，现添加防止重启VPS后TUN失效的TUN守护功能" && sleep 4
+green "恭喜，添加TUN支持成功" && sleep 4
 cat>/root/tun.sh<<-\EOF
 #!/bin/bash
 cd /dev
