@@ -63,7 +63,7 @@ mkdir net
 mknod net/tun c 10 200
 chmod 0666 net/tun
 TUN=$(cat /dev/net/tun 2>&1)
-if [[ ${TUN} != "cat: /dev/net/tun: File descriptor in bad state" ]]; then 
+if [[ ! $TUN =~ 'in bad state' ]] && [[ ! $TUN =~ '处于错误状态' ]] && [[ ! $TUN =~ 'Die Dateizugriffsnummer ist in schlechter Verfassung' ]]; then
 green "添加TUN支持失败，建议与VPS厂商沟通或后台设置开启" && exit 0
 else
 green "恭喜，添加TUN支持成功" && sleep 4
