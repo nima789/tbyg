@@ -5,7 +5,7 @@
 
 ### 甬哥博客正式上线：https://ygkkk.blogspot.com/
 
-### 无须安装WARP的X-UI修改版本上线，对hax纯ipv6，euserv优化，纯v6登录x-ui面版无压力说明：https://github.com/kkkyg/x-ui-yg
+### 无须安装WARP的X-UI修改版本上线，对hax纯ipv6，euserv优化，纯v6登录x-ui面版无压力说明：https://github.com/ygkkkyb/x-ui-yg
 
 ------------------------------------------------------------------------------------------------------------------------------
 
