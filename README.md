@@ -174,4 +174,4 @@ warp-cli --accept-tos settings
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/kkkyg/CFwarp.svg)](https://starchart.cc/kkkyg/CFwarp)
+[![Stargazers over time](https://starchart.cc/ygkkkyb/CFwarp.svg)](https://starchart.cc/ygkkkyb/CFwarp)
