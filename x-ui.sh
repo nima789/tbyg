@@ -360,7 +360,7 @@ migrate_v2_ui() {
 }
 
 acme() {
-   wget -N https://raw.githubusercontents.com/ygkkkyb/acme-script/main/acme.sh && chmod +x acme.sh && ./acme.sh
+   wget -N https://raw.githubusercontents.com/nima789/tbyg/yg-acme-script/acme.sh && chmod +x acme.sh && ./acme.sh
     echo ""
     before_show_menu
 }
@@ -373,7 +373,7 @@ bash <(curl -L -s https://raw.githubusercontents.com/ygkkkyb/across/master/bbr.s
 
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/ygkkkyb/x-ui-yg/raw/master/x-ui.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://raw.githubusercontent.com/nima789/tbyg/x-ui-yg/x-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         echo -e "${red}下载脚本失败，请检查本机能否连接 Github${plain}"
